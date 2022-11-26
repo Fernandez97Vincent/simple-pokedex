@@ -15,7 +15,7 @@ submitBtn.addEventListener('click', function(e) {
         const response = await fetch(url);
         const data = await response.json();
 
-        img.src = data.back_default;
+        img.src = data.sprites.back_default;
         pokeImg.appendChild(img)
         console.log(data);
 
@@ -25,3 +25,7 @@ submitBtn.addEventListener('click', function(e) {
     getUrl();
 })
 
+// GOAL: Eventually create a full on pokemon page using poke api
+
+// display base stats at lvl 1
+// add height, weight
